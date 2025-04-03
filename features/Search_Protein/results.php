@@ -40,8 +40,10 @@ $fasta_entries = preg_split('/(?=>)/', $fasta_data, -1, PREG_SPLIT_NO_EMPTY);
 <div class="fasta-section">
   <div class="fasta-header">
     <h3>📄 Retrieved FASTA Sequences:</h3>
-    <a href="<?= $download_url ?>" download class="download-btn">⬇️ Download FASTA</a>
-  </div>
+ 
+ <a href="<?= $download_url ?>" download = "<?= $job_id ?>.fasta" class="download-btn">⬇️ Download FASTA(.fasta)</a>
+ <a href="<?= $download_url ?>" download = "<?= $job_id ?>.txt" class="download-btn">⬇️ Download FASTA(.txt)</a>
+ </div>
 
   <div class="fasta-box">
 <?php foreach ($fasta_entries as $index => $entry): ?>
