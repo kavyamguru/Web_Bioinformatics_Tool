@@ -24,8 +24,8 @@
       <label for="protein">Protein name:</label>
       <input type="text" name="protein" placeholder="e.g. Glucose-6-phosphatase" required>
 
-      <label for="taxon">Taxon (scientific name or group):</label>
-      <input type="text" name="taxon" placeholder="e.g. Aves" required>
+      <label for="taxon">Scientific name:</label>
+      <input type="text" name="taxon" placeholder="e.g. Homo sapiens" required>
 
       <input type="submit" value="🔍 Search via UniProt">
     </form>

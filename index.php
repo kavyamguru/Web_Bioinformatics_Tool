@@ -1,6 +1,6 @@
 <?php include("header.php"); ?>
 
-<div class="main-container">
+<div class="main-container layout-flex">
   <!-- Features Sidebar -->
   <aside class="features-sidebar">
     <h2>Features</h2>
@@ -8,18 +8,7 @@
       <li><a href="features/Search_Protein/search_analyze.php">Search Proteins</a></li>
       <li><a href="features/Sequence_alignment/align.php">Sequence Alignment</a></li>
       <li><a href="features/Motif_scan/motif.php">Motif Scan (PROSITE)</a></li>
-      <li><a href="blast.php">BLAST Search</a></li>
-      <li><a href="tree.php">Phylogenetic Tree</a></li>
-      <li><a href="structure.php">3D Structure Lookup</a></li>
-      <li><a href="domain.php">Domain Architecture</a></li>
-      <li><a href="go.php">Gene Ontology (GO) Annotation</a></li>
-      <li><a href="residue.php">Conserved Residue Map</a></li>
-      <li><a href="hydrophobicity.php">Hydrophobicity / Charge Plot</a></li>
-      <li><a href="disorder.php">Disorder Prediction</a></li>
-      <li><a href="localization.php">Subcellular Localization</a></li>
-      <li><a href="interaction.php">Protein-Protein Interaction</a></li>
-      <li><a href="druggability.php">Druggability Assessment</a></li>
-      <li><a href="filter.php">Custom Sequence Filtering</a></li>
+      <li><a href="features/3D_structure/structure.php">3D Structure Lookup</a></li>
     </ul>
   </aside>
 
@@ -37,13 +26,15 @@
       <li>📊 Visualize key properties like domain architecture, hydrophobicity, and conserved regions.</li>
     </ul>
 
-    <p>You can also explore additional features (coming soon!) such as:</p>
+    <p>You can also explore additional features such as:</p>
 
     <ul>
-      <li>🚀 BLAST search</li>
-      <li>🧱 3D structure lookup</li>
-      <li>🧠 GO annotation</li>
-      <li>💊 Druggability predictions and more</li>
+    <li>🧱 <strong>3D Structure Lookup</strong> — <em>Available now!</em></li>
+  <li>🚀 BLAST Search — <em>Coming Soon</em></li>
+  <li>🧠 Phylogenetic Tree Viewer — <em>Coming Soon</em></li>
+  <li>📈 Domain Conservation Heatmap — <em>Coming Soon</em></li>
+  <li>📊 Multiple Sequence Comparison Dashboard — <em>Coming Soon</em></li>
+  <li>🔍 Functional Enrichment Analysis (GO/KEGG) — <em>Coming Soon</em></li>
     </ul>
 
     <p>

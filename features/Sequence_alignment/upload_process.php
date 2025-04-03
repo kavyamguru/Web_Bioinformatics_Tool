@@ -35,12 +35,17 @@ file_put_contents(__DIR__ . "/data/uploads/{$job_id}_debug.txt",
     "CMD 1:\n$alignment_cmd\n\nOUTPUT 1:\n$output1\n\nCMD 2:\n$plotcon_cmd\n\nOUTPUT 2:\n$output2"
 );
 
+// ✅ FIX: Define user_id before DB insert
+$user_id = $_SESSION['user']['id'] ?? null;
+$source = "upload";
+
 // Save job info
-$stmt = $pdo->prepare("INSERT INTO jobs (job_id, protein_keyword, taxon, fasta_path, alignment_path, conservation_plot) VALUES (?, ?, ?, ?, ?, ?)");
-$stmt->execute([$job_id, $protein, $taxon, $fasta_path, $alignment_path, $plot_path]);
+$stmt = $pdo->prepare("INSERT INTO jobs (job_id, protein_keyword, taxon, fasta_path, alignment_path, conservation_plot, user_id, source) VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
+$stmt->execute([$job_id, $protein, $taxon, $fasta_path, $alignment_path, $plot_path, $user_id, $source]);
 
 // Redirect
 $_SESSION['last_job']['id'] = $job_id;
 header("Location: upload_results.php?job_id=$job_id");
 exit;
 ?>
+

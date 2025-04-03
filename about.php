@@ -19,7 +19,8 @@
         <li><strong>Shell scripting:</strong> Bash used to execute command-line bioinformatics tools</li>
         <li><strong>Bioinformatics tools:</strong> Clustal Omega (for MSA), EMBOSS <code>patmatmotifs</code> (for motif detection), <code>plotcon</code> (for conservation plots)</li>
         <li><strong>Database:</strong> MySQL (for storing job info and results)</li>
-        <li><strong>Version control:</strong> Git (used locally and optionally with GitHub)</li>
+	<li><strong>Version control:</strong> Git (used locally and optionally with GitHub)</li>
+	<li><strong>External APIs:</strong> NCBI E-utilities and UniProt REST API used for retrieving RefSeq and UniProt IDs for structure visualization</li>
       </ul>
     </div>
 
@@ -34,7 +35,8 @@
         <li>Retrieve and view protein sequences in FASTA format</li>
         <li>Align sequences using Clustal Omega</li>
         <li>Generate conservation plots with plotcon</li>
-        <li>Scan for known motifs/domains using PROSITE</li>
+	<li>Scan for known motifs/domains using PROSITE</li>
+	<li>Users can visualize protein structures via AlphaFold or RCSB by entering a UniProt ID or using protein name + taxon, which is mapped automatically</li>
         <li>Download results in various formats</li>
       </ul>
     </div>

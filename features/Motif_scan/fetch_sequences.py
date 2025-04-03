@@ -2,17 +2,22 @@
 import sys
 from Bio import Entrez
 
-# Get input
-if len(sys.argv) < 4:
-    sys.exit("Usage: fetch_sequences.py <protein> <taxon> <outfile>")
+# ✅ Validate input
+if len(sys.argv) < 7:
+    sys.exit("Usage: fetch_sequences.py <protein> <taxon> <outfile> <min_len> <max_len> <retmax>")
 
-protein, taxon, outfile = sys.argv[1], sys.argv[2], sys.argv[3]
-Entrez.email = "s2754638@ed.ac.uk"  # REQUIRED
+protein, taxon, outfile, min_len, max_len, retmax = sys.argv[1:7]
+min_len = int(min_len)
+max_len = int(max_len)
+retmax = int(retmax)
 
-query = f"{protein}[All fields] AND {taxon}[Organism]"
+Entrez.email = "s2754638@ed.ac.uk"  # Replace with your email
+Entrez.api_key = "c65b31e5970bdfa388c52079674dd7ad1a08"  # Optional but recommended
+
+query = f"{protein}[All Fields] AND {taxon}[Organism] AND {min_len}:{max_len}[Sequence Length]"
 
 try:
-    handle = Entrez.esearch(db="protein", term=query, retmax=100)
+    handle = Entrez.esearch(db="protein", term=query, retmax=retmax)
     ids = Entrez.read(handle)["IdList"]
     handle.close()
 

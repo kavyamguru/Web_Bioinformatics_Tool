@@ -22,6 +22,15 @@
         <li><strong>PROSITE Database</strong> – Used as the reference motif library in motif scans.  
           <a href="https://prosite.expasy.org/" target="_blank">https://prosite.expasy.org/</a>
         </li>
+        <li><strong>AlphaFold Protein Structure Database</strong> – Used to display predicted protein 3D structures based on UniProt ID.
+          <a href="https://alphafold.ebi.ac.uk/" target="_blank">https://alphafold.ebi.ac.uk/</a>
+        </li>
+        <li><strong>RCSB Protein Data Bank (PDB)</strong> – Embedded 3D structure viewer for known experimental models.
+          <a href="https://www.rcsb.org/" target="_blank">https://www.rcsb.org/</a>
+        </li>
+        <li><strong>NCBI Entrez + UniProt Mapping</strong> – Used to fetch NCBI protein entries and convert to UniProt IDs for structural lookup.
+        </li>
+
       </ul>
     </div>
 
@@ -51,8 +60,25 @@
           <a href="https://www.php.net/manual/en/" target="_blank">https://www.php.net/manual/en/</a>
         </li>
         <li><strong>W3Schools</strong> & <strong>MDN Web Docs</strong> – Used for guidance on HTML forms, file inputs, JavaScript toggles, and CSS design.</li>
+        <li><strong>file_get_contents()</strong> (PHP) – Used for API calls to NCBI and UniProt when mapping protein names to UniProt IDs.</li>
+        <li><strong>Regex (PHP)</strong> – Used to extract UniProt IDs from XML/FASTA records for structure lookups.</li>
+        <li><strong>HTML & iframe</strong> – Used to embed RCSB’s interactive 3D viewer directly in the results page.</li>
+
       </ul>
     </div>
+    <div class="section">
+  <h2>📚 Course Concepts Applied</h2>
+  <p>The structure and functionality of this website were guided by key materials from the <strong>BILG11016: Introduction to Website and Database Design</strong> course. The following sessions were particularly influential in shaping this assessment:</p>
+  <ul>
+    <li><strong>Week 2 – HTML & First Steps with PHP:</strong> Form creation, basic input handling, and dynamic content rendering.</li>
+    <li><strong>Week 3 – SQL & Query Setup:</strong> Used to build and query the MySQL database, with all SQL actions handled securely via PHP PDO.</li>
+    <li><strong>Directed Learning #1:</strong> Helped solidify understanding of PHP-MySQL integration and input validation.</li>
+    <li><strong>Week 5 – Website Architecture:</strong> Guided the folder and file structure (e.g. separating logic into feature directories).</li>
+    <li><strong>Week 6 – Stylish Web Pages:</strong> Provided the foundation for consistent styling with custom CSS and clean layout design.</li>
+    <li><strong>Week 7 – JSON/XML APIs:</strong> Enabled use of NCBI E-utilities and UniProt mapping APIs for external data fetching and structure lookup.</li>
+  </ul>
+  <p>These specific components were directly integrated into the website's development and execution for this assignment.</p>
+</div>
 
     <div class="section">
       <h2>📦 Version Control</h2>
@@ -67,7 +93,6 @@
         <strong>Introduction to Website and Database Design (BILG11016)</strong>, University of Edinburgh.
       </p>
     </div>
-
   </div>
 </div>
 
