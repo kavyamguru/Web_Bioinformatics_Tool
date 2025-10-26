@@ -1,0 +1,17 @@
+# ----- runtime job outputs (FASTA, logs, etc.) -----
+src/features/Search_Protein/data/uploads/*
+!src/features/Search_Protein/data/uploads/README.md
+
+# ----- DB credentials / local configs -----
+database/*.php
+database/*.cnf
+database/*.ini
+
+# ----- system/editor noise -----
+.DS_Store
+*.swp
+*.swo
+*.bak
+*.tmp
+.vscode/
+.idea/

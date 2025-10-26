@@ -1,5 +1,0 @@
-Command:
-/usr/bin/python3 /localdisk/home/s2754638/public_html/website/features/Search_Protein/fetch_sequences.py "Glucose-6-phosphatase" "Aves" "/localdisk/home/s2754638/public_html/website/features/Search_Protein/data/uploads/job_67eb129486941.fasta"
-
-Output:
-
